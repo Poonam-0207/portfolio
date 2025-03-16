@@ -1,4 +1,3 @@
-// Live Date & Time
 function updateTime() {
     const now = new Date();
     document.getElementById('current-time').innerText = now.toLocaleString();
@@ -6,7 +5,6 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 
-// Contact Form Validation with Success Message
 function validateForm(event) {
     event.preventDefault();
     
