@@ -6,6 +6,7 @@ function updateTime() {
 setInterval(updateTime, 1000);
 updateTime();
 
+
 // Contact Form Validation with Success Message
 function validateForm(event) {
     event.preventDefault();
