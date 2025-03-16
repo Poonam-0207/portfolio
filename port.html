@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="port.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Poonam Chavan</span></h1>
+            
+            <p class="tagline">Web Developer & Designer</p>
+            <a href="https://www.linkedin.com/in/poonam-chavan0207" class="cta-button" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Poonam-0207" class="cta-button" target="_blank">Github</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <img src="poonam.jpg" alt="Profile Picture" class="profile-pic">  
+            
+            <div class="about-text">
+                
+                <p>I am a 3rd-year Engineering Student Proficient in Web Development.<br> I have developed two major web projects and a Spotify clone as a minor project. <br>Additionally, I won a National-Level Project Competition in 2023 for one of my web development projects. <br>Constantly learning and adapting to new technologies, Excited to apply my expertise and continue growing.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="https://via.placeholder.com/350x200" alt="Project 1">
+                <h3>Project One</h3>
+                <p>A brief description of the project and the technologies used.</p>
+                <div class="project-links">
+                    
+                    <a href="#" class="project-link">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/350x200" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>A brief description of the project and the technologies used.</p>
+                <div class="project-links">
+                    <a href="https://poonam-0207.github.io/Spotify/" class="project-link" target="_blank">Live Demo</a>
+                    <a href="https://github.com/Poonam-0207/Spotify.git" class="project-link" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/350x200" alt="Project 2">
+                <h3>Project Three</h3>
+                <p>A brief description of the project and the technologies used.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Poonam-0207/Spotify.git" class="project-link" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="https://via.placeholder.com/350x200" alt="Project 2">
+                <h3>Project Four</h3>
+                <p>A brief description of the project and the technologies used.</p>
+                <div class="project-links">
+                    <a href="https://github.com/Poonam-0207/Spotify.git" class="project-link" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get in Touch</h2>
+        <div class="contact-content">
+            <form class="contact-form" onsubmit="return validateForm(event)">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="message" placeholder="Message" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+            <p id="success-message" class="success-message"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Poonam Chavan.</p>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
